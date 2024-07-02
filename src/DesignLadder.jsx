@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from './assets/Logo.svg';
 import CommonCard from './components/common/CommonCard';
 import DesignLadderButton from './components/common/DesignLadderButton';
+import UniqueApproachCard from './components/UniqueApproachCard';
 import navData from './data/navData';
 
 export default function DesignLadder() {
@@ -65,10 +66,11 @@ export default function DesignLadder() {
             </nav>
 
             {/* checking the components */ }
-            <div className="py-10">
+            <div className="py-10 flex gap-5 flex-wrap px-5">
                 <CommonCard className={ "w-[500px] h-[300px] mx-auto" }>
                     <p>fk</p>
                 </CommonCard>
+                <UniqueApproachCard/>
             </div>
         </div>
     );
