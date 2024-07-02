@@ -68,7 +68,7 @@ export default function DesignLadder() {
             {/* checking the components */ }
             <div className="py-10 flex gap-5 flex-wrap px-5">
                 <CommonCard className={ "w-[500px] h-[300px] mx-auto" }>
-                    <p>fk</p>
+                    <p>children</p>
                 </CommonCard>
                 <UniqueApproachCard/>
             </div>
