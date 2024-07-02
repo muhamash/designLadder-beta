@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './assets/Logo.svg';
+import CommonCard from './components/common/CommonCard';
 import DesignLadderButton from './components/common/DesignLadderButton';
 import navData from './data/navData';
 
@@ -63,7 +64,12 @@ export default function DesignLadder() {
                 </div>
             </nav>
 
-            <div></div>
+            {/* checking the components */}
+            <div>
+                <CommonCard className={"w-[500px]"}>
+
+                </CommonCard>
+            </div>
         </div>
     );
 }
