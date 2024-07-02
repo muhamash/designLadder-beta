@@ -16,9 +16,9 @@ export default function DesignLadder() {
             <nav>
                 <div className="bg-[#FDB889] text-center p-1 text-sm">
                     <p>
-                        10% off in any website order{' '}
+                        10% off in any website order{ ' ' }
                         <span
-                            onClick={() => console.log("learn more!")}
+                            onClick={ () => console.log( "learn more!" ) }
                             className="cursor-pointer font-semibold underline"
                         >
                             Learn more
@@ -28,11 +28,11 @@ export default function DesignLadder() {
 
                 <div className="border-t-[1.5px] w-full border-b-[1.5px] border-[#172739] flex justify-between px-5 md:px-[40px] py-[20px]">
                     <div className="flex items-center gap-5">
-                        <img src={Logo} alt="logo?" />
+                        <img src={ Logo } alt="logo?" />
                         <p className="font-bold md:text-[30px] text-[20px]">DesignLadder</p>
                     </div>
                     <div className="flex items-center md:gap-[40px] sm:gap-[20px]">
-                        <button onClick={toggleMobileMenu} className="md:hidden block">
+                        <button onClick={ toggleMobileMenu } className="md:hidden block">
                             <svg
                                 className="w-6 h-6"
                                 fill="none"
@@ -49,25 +49,25 @@ export default function DesignLadder() {
                             </svg>
                         </button>
                     </div>
-                    <div className={`flex-col md:flex-row md:flex items-center md:gap-[40px] sm:gap-[20px] ${isMobileMenuOpen ? 'absolute right-2 top-[80px] bg-black/20 rounded-xl backdrop-blur-md p-5 text-sm text-left' : 'hidden'} gap-[10px] `}>
-                        <ul className={`flex-col md:flex-row md:flex gap-5`}>
-                            {navData && navData.map((nav) => (
-                                <li className="pb-2" onClick={()=> console.log(nav)} key={nav.id}>{nav.title}</li>
-                            ))} 
+                    <div className={ `flex-col md:flex-row md:flex items-center md:gap-[40px] sm:gap-[20px] ${isMobileMenuOpen ? 'absolute right-2 top-[80px] bg-black/20 rounded-xl backdrop-blur-md p-5 text-sm text-left' : 'hidden'} gap-[10px] ` }>
+                        <ul className={ `flex-col md:flex-row md:flex gap-5` }>
+                            { navData && navData.map( ( nav ) => (
+                                <li className="pb-2" onClick={ () => console.log( nav ) } key={ nav.id }>{ nav.title }</li>
+                            ) ) }
                         </ul>
                         <DesignLadderButton
                             className="font-bold md:text-[20px] text-[15px]"
                             text="Let's talk"
-                            onClick={() => console.log("let's talk")}
+                            onClick={ () => console.log( "let's talk" ) }
                         />
                     </div>
                 </div>
             </nav>
 
-            {/* checking the components */}
-            <div>
-                <CommonCard className={"w-[500px]"}>
-
+            {/* checking the components */ }
+            <div className="py-10">
+                <CommonCard className={ "w-[500px] h-[300px] mx-auto" }>
+                    <p>fk</p>
                 </CommonCard>
             </div>
         </div>
