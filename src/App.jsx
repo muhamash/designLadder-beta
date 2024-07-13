@@ -8,7 +8,7 @@ function App() {
       <div>
         <DesignLadder/>
       </div>
-      hello</div>
+    </div>
   )
 }
 
